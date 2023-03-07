@@ -4,7 +4,12 @@ const personOne = {
   favouriteFood: "Spinach",
 };
 
-function introduceYourself(___________________________) {
+let { name, age, favouriteFood } = personOne; //a syntax to destructure the object `personOne`
+
+console.log(name, age);
+
+
+function introduceYourself({ name, age, favouriteFood }) {
   console.log(
     `Hello, my name is ${name}. I am ${age} years old and my favourite food is ${favouriteFood}.`
   );
